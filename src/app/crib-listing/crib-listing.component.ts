@@ -15,7 +15,7 @@ export class CribListingComponent implements OnInit {
   constructor(private http: Http) { }
 
   ngOnInit() {
-    this.http.get("src/data/cribs.json")
+    this.http.get("./data/cribs.json")
             .map(res => res.json())
             .subscribe(data => console.log(data))
 
